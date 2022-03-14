@@ -1,1 +1,4 @@
-{}
+{
+  "__comment": "used for login to cross origin frame",
+  "chromeWebSecurity": false
+}

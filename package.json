@@ -4,7 +4,8 @@
   "description": "Cypress tests for care co-ordination systems.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress-tests": "cypress run --browser chrome --headed --no-exit"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
   },
   "homepage": "https://github.com/pritampatil4/test-functional-carecosystems#readme",
   "dependencies": {
-    "cypress": "^9.5.1"
+    "cypress": "^9.5.1",
+    "cypress-xpath": "^1.6.2"
   }
 }
