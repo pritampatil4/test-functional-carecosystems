@@ -18,12 +18,17 @@ describe("Verify Form Data Functionality", () => {
       const href = $a.prop("href");
       cy.visit(href); //work-around to respect cross-origin policy
       //Can also be done with session. Ref:https://docs.cypress.io/api/commands/session#Syntax
-      //We just logged with UI again.
+      //We just logged in with UI again.
       loginSuccessful();
       cy.url().should("include", "landing");
       cy.xpath('//span[text()="My caseload"]').click();
       cy.get(".card-item-action-button").first().click();
       cy.xpath('//span[text()="View Form"]').click();
+      cy.xpath('//h3[text()="SWYC™ (Survey of Well-being of Young Children)"]').should("be.visible");
+      cy.xpath('//button[@class="p-button p-component p-button-icon-only p-datepicker-trigger"]')
+        .first()
+        .invoke("attr", "aria-label")
+        .should("eq", "09/09/2021");
     });
   });
 });
