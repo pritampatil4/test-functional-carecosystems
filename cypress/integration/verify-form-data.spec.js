@@ -29,6 +29,9 @@ describe("Verify Form Data Functionality", () => {
         .first()
         .invoke("attr", "aria-label")
         .should("eq", "09/09/2021");
+      cy.get("#VISIT_TYPE_OTHER")
+        .invoke("val")
+        .should("eq", "DO_NOT_EDIT_VALUE");
     });
   });
 });
