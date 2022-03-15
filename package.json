@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cypress-tests": "cypress run --browser chrome --headed --no-exit"
+    "cypress-tests": "cypress run --browser chrome --headed"
   },
   "repository": {
     "type": "git",
