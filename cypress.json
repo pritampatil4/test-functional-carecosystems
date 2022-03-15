@@ -1,4 +1,8 @@
 {
-  "__comment": "used for login to cross origin frame",
-  "chromeWebSecurity": false
+  "__comment": "**used for login to cross origin frame**",
+  "chromeWebSecurity": false,
+  "env": {
+    "username": "<enter-username-here>",
+    "password": "<enter-password-here>"
+  }
 }

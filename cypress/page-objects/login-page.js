@@ -12,8 +12,8 @@ const visitHomePage = () => {
 
 const loginSuccessful = () => {
     cy.get(loginPage).should('be.visible');
-    cy.get(inputUsername).type('UDSAUTOQAUSER');
-    cy.get(inputPassword).type('91KYd#8oi!6#8DhMc$8DkP5OpUsl');
+    cy.get(inputUsername).type(Cypress.env('username')); //can be passed as .env vars
+    cy.get(inputPassword).type(Cypress.env('password'));//can be passed as .env vars
     cy.get(btnSubmit).click();
 }
 
